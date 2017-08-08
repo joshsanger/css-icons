@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     '_assets/css/src/mixins.less',
                     '_assets/css/src/reset.less',
                     '_assets/css/src/global.less',
-                    '_assets/css/src/material-icons.less',
+                    '_assets/css/src/*.less',
                 ],
                 dest : './_assets/css/staging.less'
             }
