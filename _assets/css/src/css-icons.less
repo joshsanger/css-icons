@@ -1,0 +1,55 @@
+.css-icons {
+    font-size: 50px;
+    height: 1em;
+    width: 1em;
+    position: relative;
+    display: inline-block;
+    vertical-align: text-bottom;
+    color: @grey;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &.person {
+        &::before {
+            content: '';
+            height: .5em;
+            width: .5em;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -.25em;
+        }
+        &::after {
+            content: '';
+            height: .4em;
+            width: 1em;
+            border-top-right-radius: 100%;
+            border-top-left-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &.line {
+            &::before,
+            &::after {
+                border: solid .05em currentcolor;
+            }
+            &::before {
+                height: .4em;
+                width: .4em;
+            }
+            &::after {
+                height: .3em;
+                width: .9em;
+            }
+
+        }
+        &:not(.line) {
+            &::before,
+            &::after {
+                background: currentcolor;
+            }
+        }
+    }
+}
