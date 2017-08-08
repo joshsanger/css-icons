@@ -1,3 +1,3 @@
 <?php 
-	define('BASE_URL', 'http://192.168.0.121/portfolio_2016');
+	define('BASE_URL', 'http://192.168.0.10/css-icons');
 ?>
