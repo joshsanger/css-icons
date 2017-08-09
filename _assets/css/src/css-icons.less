@@ -122,4 +122,134 @@
             border-right: solid .26em transparent;
         }
     }
+    &.search {
+        &::before {
+            content: '';
+            height: .5em;
+            width: .5em;
+            position: absolute;
+            border: solid .1em currentcolor;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            height: 50%;
+            width: .1em;
+            background: currentcolor;
+            left: .2em;
+            bottom: 0;
+            .transform(~"rotate(45deg)");
+        }
+    }
+    &.bars {
+        &::before {
+            content: '';
+            height: .1em;
+            width: 100%;
+            top: 50%;
+            margin-top: -.05em;
+            left: 0;
+            position: absolute;
+            background: currentcolor;
+        }
+        &::after {
+            content: '';
+            height: .46em;
+            width: 100%;
+            top: .17em;
+            left: 0;
+            position: absolute;
+            border-top: solid .1em currentcolor;
+            border-bottom: solid .1em currentcolor;
+        }
+    }
+    &.dots {
+        &::before {
+            content: '';
+            position: absolute;
+            background: currentcolor;
+            border-radius: 50%;
+            width: .2em;
+            height: .2em;
+            top: .4em;
+            left: 0.1em;
+            box-shadow: .3em 0 0 0 currentcolor,
+                        .6em 0 0 0 currentcolor;
+        }
+        &.vertical {
+            &::before {
+                left: 50%;
+                margin-left: -.1em;
+                top: .1em;
+                box-shadow: 0 .3em 0 0 currentcolor,
+                0 .6em 0 0 currentcolor;
+            }
+        }
+    }
+    &.chevron {
+        &::before {
+            content: '';
+            height: .24em;
+            width: .24em;
+            border-top: solid .06em currentcolor;
+            border-left: solid .06em currentcolor;
+            position: absolute;
+            top: .38em;
+            left: .35em;
+            .transform(~"rotate(225deg)");
+        }
+        &.left {
+            &::before {
+                .transform(~"rotate(-45deg)");
+            }
+        }
+        &.right {
+            &::before {
+                .transform(~"rotate(135deg)");
+            }
+        }
+        &.up {
+            &::before {
+                .transform(~"rotate(45deg)");
+            }
+        }
+        &.down {
+            &::before {
+                .transform(~"rotate(-135deg)");
+            }
+        }
+    }
+    &.chat {
+        &::before {
+            content: '';
+            position: absolute;
+            height: .6em;
+            width: .8em;
+            top: .1em;
+            left: .1em;
+            background: currentcolor;
+            border-radius: .1em;
+        }
+        &::after {
+            top: .7em;
+            left: .2em;
+            content: '';
+            position: absolute;
+            border-top: solid .08em currentcolor;
+            border-left: solid .1em currentcolor;
+            border-bottom: solid .08em transparent;
+            border-right: solid .1em transparent;
+        }
+        &.line {
+            &::before {
+                background: transparent;
+                border: solid .1em currentcolor;
+                height: .4em;
+                width: .6em;
+            }
+        }
+    }
 }
