@@ -1,3 +1,4 @@
+
 .css-icons {
     font-size: 50px;
     height: 1em;
@@ -33,23 +34,92 @@
         &.line {
             &::before,
             &::after {
-                border: solid .05em currentcolor;
+                border: solid .1em currentcolor;
             }
             &::before {
-                height: .4em;
-                width: .4em;
+                height: .3em;
+                width: .3em;
             }
             &::after {
-                height: .3em;
-                width: .9em;
+                height: .2em;
+                width: .8em;
             }
-
         }
         &:not(.line) {
             &::before,
             &::after {
                 background: currentcolor;
             }
+        }
+    }
+    &.clock {
+        border-radius: 50%;
+        border: solid .1em currentcolor;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            height: 30%;
+            width: 10%;
+            background: currentcolor;
+            left: 45%;
+        }
+        &::after {
+            content: '';
+            top: 40%;
+            left: 45%;
+            width: 40%;
+            height: 10%;
+            position: absolute;
+            background: currentcolor;
+            .transform(~"rotate(45deg)");
+            transform-origin: 0 100%;
+        }
+    }
+    &.download {
+        border-bottom: solid .15em currentcolor;
+        &::after {
+            content: '';
+            top: 10%;
+            height: 45%;
+            left: 50%;
+            margin-left: -.1em;
+            position: absolute;
+            width: .2em;
+            background: currentcolor;
+        }
+        &::before {
+            content: '';
+            left: 50%;
+            margin-left: -.26em;
+            position: absolute;
+            top: 55%;
+            border-top: solid .26em currentcolor;
+            border-left: solid .26em transparent;
+            border-right: solid .26em transparent;
+        }
+    }
+    &.upload {
+        border-bottom: solid .15em currentcolor;
+        &::after {
+            content: '';
+            bottom: 13%;
+            height: 45%;
+            left: 50%;
+            margin-left: -.1em;
+            position: absolute;
+            width: .2em;
+            background: currentcolor;
+        }
+        &::before {
+            content: '';
+            left: 50%;
+            margin-left: -.26em;
+            position: absolute;
+            bottom: 58%;
+            border-bottom: solid .26em currentcolor;
+            border-left: solid .26em transparent;
+            border-right: solid .26em transparent;
         }
     }
 }
