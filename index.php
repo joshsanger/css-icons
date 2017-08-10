@@ -17,6 +17,14 @@
     <i class="css-icons chevron down"></i>
     <i class="css-icons chat"></i>
     <i class="css-icons chat line"></i>
+    <i class="css-icons plus"></i>
+    <i class="css-icons minus"></i>
+    <i class="css-icons close"></i>
+    <i class="css-icons check"></i>
+    <i class="css-icons face happy"></i>
+    <i class="css-icons face sad"></i>
+    <i class="css-icons credit-card"></i>
+    <i class="css-icons calendar"></i>
 </div> <!-- /container -->
 
 <?php require_once('./_includes/footer.php');?>

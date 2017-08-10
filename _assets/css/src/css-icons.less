@@ -194,11 +194,11 @@
             content: '';
             height: .24em;
             width: .24em;
-            border-top: solid .06em currentcolor;
-            border-left: solid .06em currentcolor;
+            border-top: solid .1em currentcolor;
+            border-left: solid .1em currentcolor;
             position: absolute;
-            top: .38em;
-            left: .35em;
+            top: .33em;
+            left: .33em;
             .transform(~"rotate(225deg)");
         }
         &.left {
@@ -250,6 +250,183 @@
                 height: .4em;
                 width: .6em;
             }
+        }
+    }
+    &.plus {
+        &::before {
+            content: '';
+            height: .1em;
+            width: .5em;
+            background: currentcolor;
+            position: absolute;
+            left: .25em;
+            top: .45em;
+        }
+        &::after {
+            content: '';
+            width: .1em;
+            height: .5em;
+            background: currentcolor;
+            position: absolute;
+            top: .25em;
+            left: .45em;
+        }
+    }
+    &.minus {
+        &::before {
+            content: '';
+            height: .1em;
+            width: .5em;
+            background: currentcolor;
+            position: absolute;
+            left: .25em;
+            top: .45em;
+        }
+    }
+    &.close {
+        &::before {
+            content: '';
+            position: absolute;
+            left: .17em;
+            top: .45em;
+            width: .66em;
+            height: .1em;
+            background: currentcolor;
+            .transform(~"rotate(45deg)");
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: .17em;
+            left: .45em;
+            height: .66em;
+            width: .1em;
+            background: currentcolor;
+            .transform(~"rotate(45deg)");
+        }
+    }
+    &.check {
+        &::before {
+            content: '';
+            top: .6em;
+            height: .1em;
+            width: .3em;
+            left: .21em;
+            background: currentcolor;
+            position: absolute;
+            .transform(~"rotate(45deg)");
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: .17em;
+            left: .6em;
+            height: .66em;
+            width: .1em;
+            background: currentcolor;
+            .transform(~"rotate(45deg)");
+        }
+    }
+    &.face {
+        border-radius: 50%;
+        border: solid .1em currentcolor;
+        &::before {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            height: .15em;
+            background: currentcolor;
+            width: .15em;
+            top: .2em;
+            left: .175em;
+            box-shadow: .3em 0 0 0 currentcolor;
+        }
+        &::after {
+            content: '';
+            height: .3em;
+            width: .3em;
+            border-bottom: solid .1em currentcolor;
+            border-radius: 50%;
+            position: absolute;
+            left: .17em;
+            top: .25em;
+        }
+        &.happy {
+            &::after {
+                content: '';
+                height: .35em;
+                width: .35em;
+                border-bottom: solid .1em currentcolor;
+                border-left: solid .1em transparent;
+                border-right: solid .1em transparent;
+                border-radius: 50%;
+                position: absolute;
+                left: .125em;
+                top: .2em;
+            }
+        }
+        &.sad {
+            overflow: hidden;
+            &::after {
+                content: '';
+                height: .35em;
+                width: .35em;
+                border-top: solid .1em currentcolor;
+                border-bottom: none;
+                border-left: solid .1em transparent;
+                border-right: solid .1em transparent;
+                border-radius: 50%;
+                position: absolute;
+                left: .125em;
+                top: .5em;
+            }
+        }
+    }
+    &.credit-card {
+        &:before {
+            content: '';
+            height: .5em;
+            width: .8em;
+            top: .15em;
+            position: absolute;
+            left: 0;
+            border: solid .1em currentcolor;
+            border-radius: .1em;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: .35em;
+            height: .15em;
+            width: 100%;
+            background: currentcolor;
+        }
+    }
+    &.calendar {
+        &::before {
+            content: '';
+            position: absolute;
+            top: .1em;
+            border: solid .1em currentcolor;
+            border-top: solid .2em currentcolor;
+            left: .1em;
+            width: .6em;
+            height: .5em;
+        }
+        &::after {
+            content: '';
+            background: currentcolor;
+            height: .15em;
+            top: 0;
+            width: .15em;
+            position: absolute;
+            left: .25em;
+            box-shadow: .4em 0 0 0 currentcolor,
+                        0 .4em 0 0 currentcolor,
+                        0 .45em 0 0 currentcolor,
+                        .1em .4em 0 0 currentcolor,
+                        .1em .45em 0 0 currentcolor;
         }
     }
 }
