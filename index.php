@@ -32,6 +32,10 @@
     <i class="css-icons info"></i>
     <i class="css-icons label"></i>
     <i class="css-icons map-marker"></i>
+    <i class="css-icons arrow left"></i>
+    <i class="css-icons arrow right"></i>
+    <i class="css-icons arrow up"></i>
+    <i class="css-icons arrow down"></i>
 
 </div> <!-- /container -->
 

@@ -589,4 +589,33 @@
             border-right: solid .275em transparent;
         }
     }
+    &.arrow {
+        &::before {
+            content: '';
+            position: absolute;
+            height: .1em;
+            width: .6em;
+            left: .15em;
+            top: .45em;
+            background: currentcolor;
+        }
+        &::after {
+            content: '';
+            top: .35em;
+            right: .15em;
+            border-left: solid .15em currentcolor;
+            border-top: solid .15em transparent;
+            border-bottom: solid .15em transparent;
+            position: absolute;
+        }
+        &.right {
+            .transform(~"rotate(-180deg)");
+        }
+        &.up {
+            .transform(~"rotate(-90deg)");
+        }
+        &.down {
+            .transform(~"rotate(90deg)");
+        }
+    }
 }
