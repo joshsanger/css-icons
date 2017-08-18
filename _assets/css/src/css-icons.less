@@ -706,5 +706,36 @@
             .transform(~"rotate(-45deg)");
         }
     }
-
+    &.trash {
+        &::before {
+            content: '';
+            left: .25em;
+            bottom: .125em;
+            height: .5em;
+            width: .5em;
+            background: currentcolor;
+            position: absolute;
+            border-bottom-right-radius: .1em;
+            border-bottom-left-radius: .1em;
+        }
+        &::after {
+            content: '';
+            background: currentcolor;
+            position: absolute;
+            top: .125em;
+            left: .45em;
+            height: .1em;
+            width: .1em;
+            box-shadow: 0 0 0 0 currentcolor,
+                        .05em 0 0 0 currentcolor,
+                        -.05em 0 0 0 currentcolor,
+                        0 .1em 0 0 currentcolor,
+                        .1em .1em 0 0 currentcolor,
+                        -.1em .1em 0 0 currentcolor,
+                        .2em .1em 0 0 currentcolor,
+                        -.2em .1em 0 0 currentcolor,
+                        .25em .1em 0 0 currentcolor,
+                        -.25em .1em 0 0 currentcolor;
+        }
+    }
 }
