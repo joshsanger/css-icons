@@ -545,4 +545,27 @@
             height: .3em;
         }
     }
+    &.label {
+        &::before {
+            content: '';
+            height: .6em;
+            width: .6em;
+            border-top-left-radius: 0.1em;
+            border-bottom-left-radius: 0.1em;
+            position: absolute;
+            left: .05em;
+            top: .2em;
+            background: currentcolor;
+
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            border-top: solid .3em transparent;
+            border-left: solid .3em currentcolor;
+            border-bottom: solid .3em transparent;
+            right: .05em;
+            top: .2em;
+        }
+    }
 }

@@ -30,6 +30,7 @@
     <i class="css-icons not-allowed"></i>
     <i class="css-icons home"></i>
     <i class="css-icons info"></i>
+    <i class="css-icons label"></i>
 
 </div> <!-- /container -->
 
