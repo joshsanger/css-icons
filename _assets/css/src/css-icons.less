@@ -666,4 +666,28 @@
             right: .19em;
         }
     }
+    &.undo {
+        &::before {
+            content: '';
+            top: .4em;
+            left: .1em;
+            height: .7em;
+            width: .7em;
+            border-top: solid .1em currentcolor;
+            position: absolute;
+            border-left: solid .1em transparent;
+            border-right: solid .1em transparent;
+            border-radius: 50%;
+        }
+        &::after {
+            content: '';
+            top: .425em;
+            left: .125em;
+            border-right: solid .175em currentcolor;
+            border-top: solid .175em transparent;
+            border-bottom: solid .175em transparent;
+            position: absolute;
+            .transform(~"rotate(-45deg)");
+        }
+    }
 }

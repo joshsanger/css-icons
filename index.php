@@ -38,6 +38,7 @@
     <i class="css-icons arrow down"></i>
     <i class="css-icons mail"></i>
     <i class="css-icons edit"></i>
+    <i class="css-icons undo"></i>
 </div> <!-- /container -->
 
 <?php require_once('./_includes/footer.php');?>
