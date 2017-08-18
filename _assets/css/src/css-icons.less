@@ -595,19 +595,35 @@
             position: absolute;
             height: .1em;
             width: .6em;
-            left: .125em;
+            left: .175em;
             top: .45em;
             background: currentcolor;
         }
-        &::after {
-            content: '';
-            top: .325em;
-            right: .125em;
-            border-left: solid .175em currentcolor;
-            border-top: solid .175em transparent;
-            border-bottom: solid .175em transparent;
-            position: absolute;
+        &.alt {
+            &::after {
+                content: '';
+                height: .24em;
+                width: .24em;
+                border-top: solid .1em currentcolor;
+                border-left: solid .1em currentcolor;
+                position: absolute;
+                top: .33em;
+                left: .43em;
+                .transform(~"rotate(135deg)");
+            }
         }
+        &:not(.alt) {
+            &::after {
+                content: '';
+                top: .325em;
+                right: .125em;
+                border-left: solid .175em currentcolor;
+                border-top: solid .175em transparent;
+                border-bottom: solid .175em transparent;
+                position: absolute;
+            }
+        }
+
         &.right {
             .transform(~"rotate(-180deg)");
         }
@@ -690,4 +706,5 @@
             .transform(~"rotate(-45deg)");
         }
     }
+
 }

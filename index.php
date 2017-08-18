@@ -36,6 +36,10 @@
     <i class="css-icons arrow right"></i>
     <i class="css-icons arrow up"></i>
     <i class="css-icons arrow down"></i>
+    <i class="css-icons arrow left alt"></i>
+    <i class="css-icons arrow right alt"></i>
+    <i class="css-icons arrow up alt"></i>
+    <i class="css-icons arrow down alt"></i>
     <i class="css-icons mail"></i>
     <i class="css-icons edit"></i>
     <i class="css-icons undo"></i>
