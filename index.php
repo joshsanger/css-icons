@@ -1,8 +1,9 @@
 <?php require_once('./_includes/config.php');?>
 <?php require_once('./_includes/header.php');?>
 
-<div class="container">
-    <div class="flex-wrapper" id="icon-wrap">
+<section class="main">
+    <div class="container">
+        <div class="flex-wrapper" id="icon-wrap">
         <span class="demo-item">
             <i class="css-icons person"></i>
                 <span>person</span>
@@ -167,7 +168,8 @@
             <i class="css-icons trash"></i>
                 <span>trash</span>
         </span>
-    </div> <!-- /flex-wrapper -->
-</div> <!-- /container -->
+        </div> <!-- /flex-wrapper -->
+    </div> <!-- /container -->
+</section>
 
 <?php require_once('./_includes/footer.php');?>
