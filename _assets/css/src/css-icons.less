@@ -568,4 +568,25 @@
             top: .2em;
         }
     }
+    &.map-marker {
+        &::after {
+            content: '';
+            position: absolute;
+            height: .2em;
+            width: .2em;
+            border-radius: 50%;
+            border: solid .2em currentcolor;
+            left: .2em;
+            top: .1em;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            border-left: solid .275em transparent;
+            border-top: solid .4em currentcolor;
+            bottom: 0.1em;
+            left: .225em;
+            border-right: solid .275em transparent;
+        }
+    }
 }

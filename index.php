@@ -31,6 +31,7 @@
     <i class="css-icons home"></i>
     <i class="css-icons info"></i>
     <i class="css-icons label"></i>
+    <i class="css-icons map-marker"></i>
 
 </div> <!-- /container -->
 
