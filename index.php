@@ -2,6 +2,7 @@
 <?php require_once('./_includes/header.php');?>
 
 <div class="container">
+    <i class="css-icons star"></i>
     <i class="css-icons person"></i>
     <i class="css-icons person line"></i>
     <i class="css-icons clock"></i>
@@ -27,6 +28,7 @@
     <i class="css-icons calendar"></i>
     <i class="css-icons heart"></i>
     <i class="css-icons not-allowed"></i>
+
 </div> <!-- /container -->
 
 <?php require_once('./_includes/footer.php');?>
