@@ -429,4 +429,29 @@
                         .1em .45em 0 0 currentcolor;
         }
     }
+    &.heart {
+        &::before {
+            content: '';
+            position: absolute;
+            width: .5em;
+            height: .8em;
+            border-radius: .5em .5em 0 0;
+            .transform(~"rotate(45deg)");
+            background: currentcolor;
+            top: .05em;
+            right: .145em;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: .5em;
+            height: .8em;
+            border-radius: .5em .5em 0 0;
+            .transform(~"rotate(-45deg)");
+            background: currentcolor;
+            top: .05em;
+            left: .145em;
+        }
+    }
+
 }

@@ -25,6 +25,7 @@
     <i class="css-icons face sad"></i>
     <i class="css-icons credit-card"></i>
     <i class="css-icons calendar"></i>
+    <i class="css-icons heart"></i>
 </div> <!-- /container -->
 
 <?php require_once('./_includes/footer.php');?>
