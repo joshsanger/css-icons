@@ -36,7 +36,7 @@
     <i class="css-icons arrow right"></i>
     <i class="css-icons arrow up"></i>
     <i class="css-icons arrow down"></i>
-
+    <i class="css-icons mail"></i>
 </div> <!-- /container -->
 
 <?php require_once('./_includes/footer.php');?>

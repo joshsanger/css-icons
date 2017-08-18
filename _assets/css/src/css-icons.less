@@ -618,4 +618,27 @@
             .transform(~"rotate(90deg)");
         }
     }
+    &.mail {
+        &:before {
+            content: '';
+            height: .5em;
+            width: .8em;
+            top: .15em;
+            position: absolute;
+            left: 0;
+            border: solid .1em currentcolor;
+            border-radius: .1em;
+        }
+        &::after {
+            content: '';
+            height: .45em;
+            width: .45em;
+            left: .225em;
+            position: absolute;
+            border-bottom: solid .1em currentcolor;
+            border-right: solid .1em currentcolor;
+            .transform(~"rotate(45deg)");
+            top: -.05em;
+        }
+    }
 }
