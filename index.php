@@ -26,6 +26,7 @@
     <i class="css-icons credit-card"></i>
     <i class="css-icons calendar"></i>
     <i class="css-icons heart"></i>
+    <i class="css-icons not-allowed"></i>
 </div> <!-- /container -->
 
 <?php require_once('./_includes/footer.php');?>

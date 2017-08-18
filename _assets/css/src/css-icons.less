@@ -453,5 +453,18 @@
             left: .145em;
         }
     }
-
+    &.not-allowed {
+        border-radius: 50%;
+        border: solid .1em currentcolor;
+        &::before {
+            content: '';
+            position: absolute;
+            .transform(~"rotate(-45deg)");
+            top: .35em;
+            left: -.025em;
+            width: .85em;
+            height: .1em;
+            background: currentcolor;
+        }
+    }
 }
