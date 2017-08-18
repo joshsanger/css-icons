@@ -1,6 +1,13 @@
-
+@grey: #a0a0a0;
+.transform(...) {
+    -webkit-transform: @arguments;
+    -mox-transform: @arguments;
+    -o-transform: @arguments;
+    -ms-transform: @arguments;
+    transform: @arguments;
+}
 .css-icons {
-    font-size: 50px;
+    font-size: 40px;
     height: 1em;
     width: 1em;
     position: relative;
@@ -526,15 +533,6 @@
     &.info {
         border-radius: 50%;
         border: solid .1em currentcolor;
-        &::after {
-            content: '';
-            top: .15em;
-            background: currentcolor;
-            left: .35em;
-            width: .1em;
-            position: absolute;
-            height: .1em;
-        }
         &::before {
             content: '';
             top: .35em;
@@ -543,6 +541,15 @@
             width: .1em;
             position: absolute;
             height: .3em;
+        }
+        &::after {
+            content: '';
+            top: .15em;
+            background: currentcolor;
+            left: .35em;
+            width: .1em;
+            position: absolute;
+            height: .1em;
         }
     }
     &.label {
@@ -569,6 +576,15 @@
         }
     }
     &.map-marker {
+        &::before {
+            content: '';
+            position: absolute;
+            border-left: solid .275em transparent;
+            border-top: solid .4em currentcolor;
+            bottom: 0.1em;
+            left: .225em;
+            border-right: solid .275em transparent;
+        }
         &::after {
             content: '';
             position: absolute;
@@ -578,15 +594,6 @@
             border: solid .2em currentcolor;
             left: .2em;
             top: .1em;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            border-left: solid .275em transparent;
-            border-top: solid .4em currentcolor;
-            bottom: 0.1em;
-            left: .225em;
-            border-right: solid .275em transparent;
         }
     }
     &.arrow {
@@ -658,6 +665,15 @@
         }
     }
     &.edit {
+        &::before {
+            content: '';
+            height: .14em;
+            width: .14em;
+            background: currentcolor;
+            position: absolute;
+            bottom: .2em;
+            right: .19em;
+        }
         &::after {
             content: '';
             height: .175em;
@@ -671,15 +687,6 @@
             box-shadow: 0 .25em 0 0 currentcolor,
                         0 .42em 0 0 currentcolor,
                         0 .57em 0 0 currentcolor;
-        }
-        &::before {
-            content: '';
-            height: .14em;
-            width: .14em;
-            background: currentcolor;
-            position: absolute;
-            bottom: .2em;
-            right: .19em;
         }
     }
     &.undo {
