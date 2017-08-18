@@ -501,4 +501,26 @@
             .transform(~"rotate(-70deg)");
         }
     }
+    &.home {
+        &::before {
+            content: '';
+            position: absolute;
+            top: .1em;
+            left: .1em;
+            border-bottom: solid .4em currentcolor;
+            border-left: solid .4em transparent;
+            border-right: solid .4em transparent;
+        }
+        &::after {
+            content: '';
+            height: .4em;
+            bottom: .1em;
+            width: .2em;
+            left: .2em;
+            background: currentcolor;
+            position: absolute;
+            box-shadow: .4em 0 0 0 currentcolor,
+                        .2em -.25em 0 0 currentcolor;
+        }
+    }
 }

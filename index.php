@@ -28,6 +28,7 @@
     <i class="css-icons calendar"></i>
     <i class="css-icons heart"></i>
     <i class="css-icons not-allowed"></i>
+    <i class="css-icons home"></i>
 
 </div> <!-- /container -->
 
