@@ -1,0 +1,36 @@
+#icon-wrap {
+    .flex-container(row, wrap);
+    padding: 10px;
+}
+.demo-item {
+    border: solid 1px #f5f5f5;
+    padding: 20px 0 10px 0;
+    margin: 10px;
+    width: 200px;
+    .flex-container(row, wrap);
+    .justify-content(center);
+    cursor: pointer;
+    &:hover {
+        & span {
+            color: indianred;
+        }
+        & i {
+            color: indianred;
+        }
+    }
+    & span {
+        font-family: 'Lato', sans-serif;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        color: #202020;
+        margin-top: 20px;
+        border-top: solid 1px #f5f5f5;
+        padding: 10px 10px 0 10px;
+        .trans(color, 0.3s);
+    }
+    & i {
+        .trans(color, 0.3s);
+    }
+}

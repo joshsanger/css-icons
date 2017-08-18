@@ -7,5 +7,6 @@
         <title>Css Only Icons</title>
         <script src="<?php echo BASE_URL;?>/_assets/js/lib/modernizr.js"></script>
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/_assets/css/master.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
     <body>
